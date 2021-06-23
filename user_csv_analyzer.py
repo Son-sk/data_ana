@@ -1,6 +1,7 @@
 # -*- coding: cp949 -*- 
 import csv
-
+#test1
+#test@
 def run_csv_file(open_file_name, write_file_name):
 
     # open_file_name = 'test_user7.csv'  #실행할 파일 선택 (CSV)
