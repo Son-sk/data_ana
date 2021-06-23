@@ -3,10 +3,11 @@ import csv
 
 #test1
 #test@
+#create_merge
 
 def run_csv_file(open_file_name, write_file_name):
 
-    # open_file_name = 'test_user7.csv'  #ì‹¤í–‰í•  íŒŒì¼ ì„ íƒ (CSV)
+    # open_file_name = 'test_user7.csv'  #?‹¤?–‰?•  ?ŒŒ?¼ ?„ ?ƒ (CSV)
     # write_file_name = 'write_user7_x.csv'
 
     save_address_time = []
@@ -36,7 +37,7 @@ def run_csv_file(open_file_name, write_file_name):
     csv_f = open(write_file_name,'a', newline='')
     wr = csv.writer(csv_f)
     wr.writerow(["time", "settemp"])
-    #wr.writerow(["-----ì‹¤ë‚´ì˜¨ë„ëª¨ë“œ-----"])
+    #wr.writerow(["-----?‹¤?‚´?˜¨?„ëª¨ë“œ-----"])
     for i in range(0, save_count) :
         wr.writerow([save_address_time[i], save_address_settemp[i]])
 
@@ -47,13 +48,13 @@ def run_csv_file(open_file_name, write_file_name):
 
     # if check_sum > 0:
     #     in_ave = check_sum / check_count
-    #     wr.writerow(["ì‹¤ë‚´ì˜¨ë„ 10ë¶„ ì´ìƒ ì—°ì† ì—°ì†Œì¡°ê±´ì—ì„œì˜ ì‹¤ë‚´ì˜¨ 1ë„ ìƒìŠ¹ í‰ê· ì‹œê°„:"])
+    #     wr.writerow(["?‹¤?‚´?˜¨?„ 10ë¶? ?´?ƒ ?—°?† ?—°?†Œì¡°ê±´?—?„œ?˜ ?‹¤?‚´?˜¨ 1?„ ?ƒ?Š¹ ?‰ê· ì‹œê°?:"])
     #     wr.writerow([check_count," Case"])
     #     wr.writerow([round(in_ave,2)," Sec(Average)"])
 
     # if ondol_check_sum > 0 :
     #     ondol_ave = ondol_check_sum / ondol_check_count
-    #     wr.writerow(["ì˜¨ëŒì˜¨ë„ 10ë¶„ ì´ìƒ ì—°ì† ì—°ì†Œì¡°ê±´ì—ì„œì˜ ì‹¤ë‚´ì˜¨ 1ë„ ìƒìŠ¹ í‰ê· ì‹œê°„:"])
+    #     wr.writerow(["?˜¨?Œ?˜¨?„ 10ë¶? ?´?ƒ ?—°?† ?—°?†Œì¡°ê±´?—?„œ?˜ ?‹¤?‚´?˜¨ 1?„ ?ƒ?Š¹ ?‰ê· ì‹œê°?:"])
     #     wr.writerow([ondol_check_count," Case"])
     #     wr.writerow([round(ondol_ave,2)," Sec(Average)"])
 
